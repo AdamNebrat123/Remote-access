@@ -5,7 +5,7 @@ The client streams the screen, while the server sends input commands (mouse and 
 
 ## Usage
 
-Run the project on two separate machines: one as the **client** and the other as the **server**.
+Run the project on two separate computers: one as the **client** and the other as the **server**.
 to install the needed modules for the project run:
 ```bash
 pip install pyautogui pynput pillow opencv-python numpy
