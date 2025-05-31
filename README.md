@@ -6,6 +6,11 @@ The client streams the screen, while the server sends input commands (mouse and 
 ## Usage
 
 Run the project on two separate machines: one as the **client** and the other as the **server**.
+to install the needed modules for the project run:
+```bash
+pip install pyautogui pynput pillow opencv-python numpy
+```
+
 In `Client.py`, update the `SERVER_IP` variable inside the `main` function to match the IP address of the server machine (around line 63).
 Start the server first, then the client. A window should open on the server showing the client's screen — remote control begins from there.
 ## warning
