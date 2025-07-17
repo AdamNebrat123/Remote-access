@@ -48,7 +48,7 @@ def main():
     # videoShowThread - thread that shows frames nonstop. shows the screen of the client.
     videoShowThread = threading.Thread(target=ShowScreen, args=(video_client_socket,video_server_socket, server_logger))
 
-    # start sendFramesThread - start the share screen.
+    # start videoShowThread - start the share screen.
     videoShowThread.start()
     server_logger.info('**********\n* videoShowThread started! *\n**********')
 
@@ -68,7 +68,7 @@ def main():
     # sendActionsThread - thread that send actions to the client
     sendActionsThread = threading.Thread(target=SendActions, args=(actions_client_socket,actions_server_socket,server_logger))
 
-    # start sendFramesThread - start the share screen.
+    # start sendActionsThread - start sending actions to the client.
     sendActionsThread.start()
     server_logger.info('**********\n* sendActionsThread started! *\n**********')
 
